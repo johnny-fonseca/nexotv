@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Contorno del marcador con esquinas y vértices redondeados -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M7,3.5h10c0.83,0 1.5,0.67 1.5,1.5v14.6c0,0.4 -0.46,0.63 -0.78,0.39L12.3,16.1c-0.18,-0.13 -0.42,-0.13 -0.6,0L6.28,19.99C5.96,20.23 5.5,20 5.5,19.6V5C5.5,4.17 6.17,3.5 7,3.5z" />
+
+    <!-- Relleno interior sutil para dar profundidad -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.25"
+        android:pathData="M7.4,5h9.2c0.22,0 0.4,0.18 0.4,0.4v11.9L12.3,13.9c-0.18,-0.13 -0.42,-0.13 -0.6,0L7,17.3V5.4C7,5.18 7.18,5 7.4,5z" />
+</vector>

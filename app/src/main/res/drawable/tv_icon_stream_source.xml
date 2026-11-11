@@ -1,0 +1,56 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Mástil de la antena -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12,10.5V21" />
+
+    <!-- Base de la antena -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M8.5,21h7" />
+
+    <!-- Emisor superior -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,3.5a2.5,2.5 0,1 0,0 5a2.5,2.5 0,1 0,0 -5z" />
+
+    <!-- Brillo interior del emisor -->
+    <path
+        android:fillColor="#FF000000"
+        android:fillAlpha="0.25"
+        android:pathData="M12,5.1a0.9,0.9 0,1 0,0 1.8a0.9,0.9 0,1 0,0 -1.8z" />
+
+    <!-- Ondas de señal interiores -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M8.6,7.2a5,5 0,0 0,0 3.6M15.4,7.2a5,5 0,0 1,0 3.6" />
+
+    <!-- Ondas de señal exteriores -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeAlpha="0.6"
+        android:pathData="M6,5.2a8.5,8.5 0,0 0,0 7.6M18,5.2a8.5,8.5 0,0 1,0 7.6" />
+
+    <!-- Relleno sutil de la zona de cobertura -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.12"
+        android:pathData="M12,10.5l-3.2,10.5h6.4z" />
+</vector>

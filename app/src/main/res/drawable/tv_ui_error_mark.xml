@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_ui_on_live"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M8,1.3 L14.4,13.8 H1.6 Z" />
+    <path
+        android:fillColor="@color/tv_ui_on_live"
+        android:pathData="M7,4.2h2v5.2h-2z M7,10.7h2v2h-2z" />
+</vector>

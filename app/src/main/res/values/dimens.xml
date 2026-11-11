@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_classic_menu_secondary_text_min">12sp</dimen>
+    <dimen name="tv_classic_menu_content_horizontal">48dp</dimen>
+    <dimen name="tv_classic_menu_content_vertical">27dp</dimen>
+
+    <!-- ============================================================
+         1. PRIMITIVAS (únicas fuentes de valores; el resto de valores las referencia)
+         ============================================================ -->
+
+    <!-- Espaciado (base 8dp) -->
+    <dimen name="tv_space_1">8dp</dimen>
+    <dimen name="tv_space_2">16dp</dimen>
+    <dimen name="tv_space_3">24dp</dimen>
+    <dimen name="tv_space_4">32dp</dimen>
+    <dimen name="tv_space_5">48dp</dimen>
+    <!-- Medio paso, usado por filas/gaps compactos -->
+    <dimen name="tv_space_half">12dp</dimen>
+
+    <!-- Escala tipográfica -->
+    <dimen name="tv_text_caption">18sp</dimen>
+    <dimen name="tv_text_secondary">20sp</dimen>
+    <dimen name="tv_text_subtitle">22sp</dimen>
+    <dimen name="tv_text_body">24sp</dimen>
+    <dimen name="tv_text_player_title">26sp</dimen>
+    <dimen name="tv_text_section">28sp</dimen>
+    <dimen name="tv_text_title">32sp</dimen>
+    <dimen name="tv_text_heading">40sp</dimen>
+    <dimen name="tv_text_hero">56sp</dimen>
+
+    <!-- Radios -->
+    <dimen name="tv_radius_card">20dp</dimen>
+    <dimen name="tv_radius_panel">24dp</dimen>
+
+    <!-- ============================================================
+         2. TOKENS COMUNES
+         ============================================================ -->
+    <dimen name="tv_min_row_height">64dp</dimen>
+    <dimen name="tv_min_destination_height">96dp</dimen>
+    <dimen name="tv_component_padding">@dimen/tv_space_2</dimen>
+
+    <dimen name="tv_icon_size">40dp</dimen>
+
+
+    <!-- Pisos de legibilidad para paneles -->
+    <dimen name="tv_panel_text_floor">@dimen/tv_text_secondary</dimen>
+    <dimen name="tv_panel_title_floor">@dimen/tv_text_subtitle</dimen>
+
+    <!-- ============================================================
+         3. GUÍA (Guide)
+         ============================================================ -->
+    <dimen name="tv_guide_row_gap">@dimen/tv_space_half</dimen>
+    <dimen name="tv_guide_program_image_height">144dp</dimen>
+
+    <!-- Guía: chips de día -->
+
+    <!-- ============================================================
+         4. GRABACIONES (Recordings)
+         ============================================================ -->
+
+    <!-- ============================================================
+         5. REPRODUCTOR (Player)
+         ============================================================ -->
+    <dimen name="tv_player_title_size">@dimen/tv_text_player_title</dimen>
+    <dimen name="tv_player_schedule_size">@dimen/tv_text_secondary</dimen>
+    <dimen name="tv_player_secondary_size">@dimen/tv_text_secondary</dimen>
+    <dimen name="tv_player_badge_size">@dimen/tv_text_caption</dimen>
+    <dimen name="tv_player_badge_padding_horizontal">@dimen/tv_space_1</dimen>
+    <dimen name="tv_player_badge_padding_vertical">2dp</dimen>
+    <dimen name="tv_player_card_padding_horizontal">@dimen/tv_space_2</dimen>
+    <dimen name="tv_player_card_padding_vertical">@dimen/tv_space_half</dimen>
+    <dimen name="tv_player_card_gap">10dp</dimen>
+    <dimen name="tv_player_progress_height">6dp</dimen>
+
+    <!-- ============================================================
+         6. TARJETAS DE ESTADO (Status)
+         ============================================================ -->
+    <dimen name="tv_status_card_padding_horizontal">@dimen/tv_space_2</dimen>
+    <dimen name="tv_status_card_padding_vertical">@dimen/tv_space_half</dimen>
+    <dimen name="tv_status_action_gap">@dimen/tv_space_half</dimen>
+    <dimen name="tv_status_action_top_gap">@dimen/tv_space_2</dimen>
+    <dimen name="tv_status_icon_size">@dimen/tv_icon_size</dimen>
+    <dimen name="tv_status_icon_gap">@dimen/tv_space_half</dimen>
+
+    <!-- ============================================================
+         7. MENÚ
+         ============================================================ -->
+    <!-- 5% de overscan sobre 540dp de alto; valor intencional, no ajustar a la grilla -->
+    <dimen name="tv_menu_row_radius">@dimen/tv_radius_card</dimen>
+
+    <!-- ============================================================
+         8. UI TOKENS (P0). Grilla base de 8dp.
+         ============================================================ -->
+    <!-- Foco: anillo de 3dp, misma geometría en todos los controles -->
+    <dimen name="tv_ui_focus_ring_width">3dp</dimen>
+    <dimen name="tv_ui_focus_lift">2dp</dimen>
+    <dimen name="tv_ui_hairline">1dp</dimen>
+
+    <!-- Radios -->
+    <dimen name="tv_ui_radius_control">12dp</dimen>
+    <dimen name="tv_ui_radius_card">16dp</dimen>
+    <dimen name="tv_ui_radius_panel">20dp</dimen>
+    <dimen name="tv_ui_radius_chip">24dp</dimen>
+
+    <!-- Escala tipográfica: 5 estilos, cuerpo >= 18sp, secundario >= 16sp -->
+    <dimen name="tv_ui_text_secondary">16sp</dimen>
+    <dimen name="tv_ui_text_body">20sp</dimen>
+    <dimen name="tv_ui_text_title">24sp</dimen>
+    <dimen name="tv_ui_text_hero">32sp</dimen>
+    <dimen name="tv_ui_text_number">28sp</dimen>
+
+    <!-- Espaciado -->
+    <dimen name="tv_ui_gap_1">8dp</dimen>
+    <dimen name="tv_ui_gap_2">16dp</dimen>
+    <dimen name="tv_ui_gap_3">24dp</dimen>
+    <dimen name="tv_ui_gap_4">32dp</dimen>
+    <dimen name="tv_ui_panel_pad">32dp</dimen>
+
+    <!-- Alturas de interacción -->
+    <dimen name="tv_ui_row_height">48dp</dimen>
+    <dimen name="tv_ui_button_height">56dp</dimen>
+    <dimen name="tv_ui_chip_height">40dp</dimen>
+
+    <!-- Iconos -->
+    <dimen name="tv_ui_icon_sm">20dp</dimen>
+    <dimen name="tv_ui_icon_md">24dp</dimen>
+    <dimen name="tv_ui_icon_lg">32dp</dimen>
+
+    <!-- Barras y badges -->
+    <dimen name="tv_ui_progress_height">4dp</dimen>
+    <dimen name="tv_ui_badge_pad_h">12dp</dimen>
+    <dimen name="tv_ui_badge_pad_v">4dp</dimen>
+    <dimen name="tv_ui_divider">1dp</dimen>
+
+    <!-- Esqueletos de carga: tamaño fijo, sin shimmer -->
+    <dimen name="tv_ui_skeleton_line">16dp</dimen>
+    <dimen name="tv_ui_skeleton_gap">8dp</dimen>
+
+    <!-- ============================================================
+         9. HOME / MENÚ PRINCIPAL (P1)
+         ============================================================ -->
+    <dimen name="tv_ui_nav_pad">8dp</dimen>
+    <dimen name="tv_ui_nav_item_gap">8dp</dimen>
+    <dimen name="tv_ui_brand_mark">48dp</dimen>
+
+    <dimen name="tv_ui_hero_gap">24dp</dimen>
+    <dimen name="tv_ui_hero_pad">16dp</dimen>
+    <dimen name="tv_ui_card_pad">8dp</dimen>
+    <dimen name="tv_ui_rail_gap">24dp</dimen>
+    <dimen name="tv_ui_hint_margin">32dp</dimen>
+    <dimen name="tv_ui_live_dot">8dp</dimen>
+    <dimen name="tv_ui_home_rail_title_height">32dp</dimen>
+
+</resources>

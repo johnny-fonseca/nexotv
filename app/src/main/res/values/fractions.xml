@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================
+         PRIMITIVAS
+         ============================================================ -->
+    <fraction name="tv_full">100%</fraction>
+    <fraction name="tv_safe_margin">5%</fraction>
+
+    <!-- ============================================================
+         DIÁLOGOS
+         ============================================================ -->
+    <fraction name="tv_dialog_min_width">@fraction/tv_full</fraction>
+
+    <!-- ============================================================
+         ÁREA SEGURA (overscan)
+         ============================================================ -->
+    <fraction name="tv_safe_margin_horizontal">@fraction/tv_safe_margin</fraction>
+    <fraction name="tv_safe_margin_vertical">@fraction/tv_safe_margin</fraction>
+
+    <!-- ============================================================
+         GRABACIONES
+         ============================================================ -->
+
+    <!-- ============================================================
+         REPRODUCTOR
+         ============================================================ -->
+    <fraction name="tv_player_card_max_width">62%</fraction>
+    <!-- Opacidades (0–100%) -->
+    <fraction name="tv_player_clock_opacity">62%</fraction>
+
+    <!-- ============================================================
+         TARJETAS DE ESTADO
+         ============================================================ -->
+    <fraction name="tv_status_action_card_max_width">40%</fraction>
+
+    <!-- ============================================================
+         MENÚ
+         ============================================================ -->
+    <!-- Opacidad del fondo atenuado (0–100%) -->
+
+    <!-- ============================================================
+         UI TOKENS (P0)
+         ============================================================ -->
+    <!-- Panel lateral: <= 35% del ancho -->
+    <fraction name="tv_ui_panel_width">34%</fraction>
+    <!-- Scrim inferior: cubre solo la franja de información, nunca el centro del video -->
+    <fraction name="tv_ui_scrim_height">42%</fraction>
+
+    <!-- Home: hero 62% y "A continuación" 38% del ancho de contenido -->
+    <fraction name="tv_ui_home_hero_weight">62%</fraction>
+    <fraction name="tv_ui_home_next_weight">38%</fraction>
+    <fraction name="tv_ui_home_nav_width">20%</fraction>
+    <fraction name="tv_ui_home_hero_height">45%</fraction>
+    <fraction name="tv_ui_home_rail_card_width">35%</fraction>
+
+</resources>

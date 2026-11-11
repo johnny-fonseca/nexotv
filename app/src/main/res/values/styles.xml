@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================
+         ANIMACIONES
+         ============================================================ -->
+    <style name="TvDialogAnimations">
+        <item name="android:windowEnterAnimation">@anim/tv_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/tv_dialog_exit</item>
+    </style>
+
+    <!-- ============================================================
+         TEMAS
+         ============================================================ -->
+    <style name="TvFullscreenDialogTheme" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowMinWidthMajor">@fraction/tv_dialog_min_width</item>
+        <item name="android:windowMinWidthMinor">@fraction/tv_dialog_min_width</item>
+        <item name="android:windowAnimationStyle">@style/TvDialogAnimations</item>
+    </style>
+
+    <style name="TvIptvTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:alertDialogTheme">@style/TvFullscreenDialogTheme</item>
+        <item name="android:windowMinWidthMajor">@fraction/tv_dialog_min_width</item>
+        <item name="android:windowMinWidthMinor">@fraction/tv_dialog_min_width</item>
+        <item name="android:windowAnimationStyle">@style/TvDialogAnimations</item>
+    </style>
+
+    <!-- ============================================================
+         TEXTO: BASES
+         ============================================================ -->
+    <style name="TvTextBase" parent="android:style/TextAppearance.Material" />
+
+    <style name="TvTextPrimary" parent="TvTextBase">
+        <item name="android:textColor">@color/tv_text_primary</item>
+    </style>
+
+    <style name="TvTextPrimaryBold" parent="TvTextPrimary">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ============================================================
+         TEXTO: ESCALA
+         ============================================================ -->
+    <style name="TvTextSecondary" parent="TvTextBase">
+        <item name="android:textSize">@dimen/tv_text_secondary</item>
+        <item name="android:textColor">@color/tv_text_secondary</item>
+    </style>
+
+    <style name="TvTextBody" parent="TvTextPrimary">
+        <item name="android:textSize">@dimen/tv_text_body</item>
+    </style>
+
+    <style name="TvTextTitle" parent="TvTextPrimaryBold">
+        <item name="android:textSize">@dimen/tv_text_title</item>
+    </style>
+
+    <style name="TvTextHeading" parent="TvTextPrimaryBold">
+        <item name="android:textSize">@dimen/tv_text_heading</item>
+    </style>
+
+    <style name="TvTextHero" parent="TvTextPrimaryBold">
+        <item name="android:textSize">@dimen/tv_text_hero</item>
+    </style>
+
+    <!-- ============================================================
+         UI TOKENS (P0): escala de 5 estilos para la UI nueva.
+         El código de pantalla no fija tamaños ni colores de texto.
+         ============================================================ -->
+    <style name="TvUiTextSecondary" parent="android:style/TextAppearance.Material">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/tv_ui_text_secondary</item>
+        <item name="android:textColor">@color/tv_ui_text_2</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TvUiTextBody" parent="android:style/TextAppearance.Material">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/tv_ui_text_body</item>
+        <item name="android:textColor">@color/tv_ui_text_1</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TvUiTextTitle" parent="android:style/TextAppearance.Material">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/tv_ui_text_title</item>
+        <item name="android:textColor">@color/tv_ui_text_1</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TvUiTextHero" parent="android:style/TextAppearance.Material">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/tv_ui_text_hero</item>
+        <item name="android:textColor">@color/tv_ui_text_1</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TvUiTextNumber" parent="android:style/TextAppearance.Material">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">@dimen/tv_ui_text_number</item>
+        <item name="android:textColor">@color/tv_ui_text_1</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- ============================================================
+         HOME (P1): pantalla opaca, sin animación de ventana ni dim.
+         La animación de contenido la hace TvMotion sobre el panel.
+         ============================================================ -->
+    <style name="TvUiHomeDialogTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- El fondo opaco lo pinta la raíz de TvHomeScreen: una sola capa. -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>

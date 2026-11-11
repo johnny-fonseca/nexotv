@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Marco del monitor con esquinas redondeadas -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M5,4h14c1.1,0 2,0.9 2,2v9c0,1.1 -0.9,2 -2,2H5c-1.1,0 -2,-0.9 -2,-2V6C3,4.9 3.9,4 5,4z" />
+
+    <!-- Relleno sutil de la pantalla -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.15"
+        android:pathData="M5.5,5.5h13c0.55,0 1,0.45 1,1v8c0,0.55 -0.45,1 -1,1h-13c-0.55,0 -1,-0.45 -1,-1v-8C4.5,5.95 4.95,5.5 5.5,5.5z" />
+
+    <!-- Base del monitor -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M8,20.5h8M12,17v3.5" />
+
+    <!-- Flecha diagonal de expansión (pantalla completa) -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12.5,12.5L16.5,8.5" />
+
+    <!-- Esquina superior derecha de la flecha -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M13.5,8.5h3v3" />
+
+    <!-- Esquina inferior izquierda de la flecha -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M10.5,11.5v3h3" />
+</vector>

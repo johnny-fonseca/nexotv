@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">FUTV</string>
+    <string name="player_channel" translatable="false">FUTV</string>
+    <string name="tv_channel_name" translatable="false">FUTV</string>
+    <string name="player_status_connecting">Conectando con la señal de FUTV…</string>
+    <string name="player_status_signal_title">Error al cargar o reproducir FUTV</string>
+    <string name="player_status_recording_accessibility">Grabando FUTV · %1$s</string>
+    <string name="tv_menu_record_help">Comienza a guardar FUTV</string>
+    <string name="tv_guide_empty_meta">FUTV · Costa Rica</string>
+</resources>

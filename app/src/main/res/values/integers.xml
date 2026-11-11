@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================
+         PRIMITIVAS
+         ============================================================ -->
+
+    <!-- Tiempo (ms) -->
+    <integer name="tv_duration_1s_ms">1000</integer>
+    <integer name="tv_duration_2s_ms">2000</integer>
+    <integer name="tv_duration_4s_ms">4000</integer>
+    <integer name="tv_duration_10s_ms">10000</integer>
+    <integer name="tv_duration_12s_ms">12000</integer>
+    <integer name="tv_duration_30s_ms">30000</integer>
+
+    <!-- Conversión de tiempo (unidades) -->
+    <integer name="tv_seconds_per_minute">60</integer>
+    <integer name="tv_minutes_per_hour">60</integer>
+    <integer name="tv_seconds_per_hour">3600</integer>
+
+    <!-- ============================================================
+         MOVIMIENTO Y FOCO
+         ============================================================ -->
+    <integer name="tv_focus_scale_percent">103</integer>
+    <integer name="tv_classic_menu_focus_shine_duration_ms">520</integer>
+
+    <!-- ============================================================
+         PANELES / TEXTO
+         ============================================================ -->
+    <integer name="tv_panel_text_max_sp">24</integer>
+
+    <!-- ============================================================
+         GUÍA
+         ============================================================ -->
+
+    <!-- ============================================================
+         REPRODUCTOR
+         ============================================================ -->
+    <integer name="tv_player_progress_max">1000</integer>
+    <integer name="tv_paused_info_refresh_ms">@integer/tv_duration_30s_ms</integer>
+
+    <!-- ============================================================
+         ESTADO
+         ============================================================ -->
+    <integer name="tv_status_connecting_delay_ms">@integer/tv_duration_1s_ms</integer>
+    <integer name="tv_status_reconnecting_delay_ms">@integer/tv_duration_2s_ms</integer>
+    <integer name="tv_status_recording_ticker_ms">@integer/tv_duration_1s_ms</integer>
+    <integer name="tv_status_retry_start_timeout_ms">@integer/tv_duration_10s_ms</integer>
+
+    <!-- ============================================================
+         MENÚ
+         ============================================================ -->
+    <integer name="tv_menu_seconds_per_minute">@integer/tv_seconds_per_minute</integer>
+    <integer name="tv_menu_minutes_per_hour">@integer/tv_minutes_per_hour</integer>
+    <integer name="tv_menu_seconds_per_hour">@integer/tv_seconds_per_hour</integer>
+
+    <!-- ============================================================
+         UI TOKENS (P0)
+         ============================================================ -->
+    <!-- Foco: 1.05x, anillo de 3dp, 130ms -->
+    <integer name="tv_ui_focus_scale_percent">105</integer>
+    <integer name="tv_ui_focus_anim_ms">130</integer>
+    <integer name="tv_ui_focus_retries">8</integer>
+    <integer name="tv_ui_focus_retry_ms">40</integer>
+
+    <!-- Paneles y fundidos: 180-220ms -->
+    <integer name="tv_ui_panel_anim_ms">200</integer>
+    <integer name="tv_ui_fade_ms">180</integer>
+    <integer name="tv_ui_chip_anim_ms">160</integer>
+
+    <!-- Overlay y zapping -->
+    <integer name="tv_ui_overlay_timeout_ms">5000</integer>
+    <integer name="tv_ui_zap_commit_ms">400</integer>
+    <integer name="tv_ui_zap_banner_ms">2000</integer>
+
+    <!-- Anti-flicker -->
+    <integer name="tv_ui_buffering_delay_ms">800</integer>
+    <integer name="tv_ui_buffering_min_ms">500</integer>
+    <integer name="tv_ui_quality_chip_ms">4000</integer>
+
+    <!-- Salida y pulsación larga -->
+    <integer name="tv_ui_exit_window_ms">2000</integer>
+    <integer name="tv_ui_long_ok_ms">2000</integer>
+
+    <!-- Caché de la escala de animación del sistema -->
+    <integer name="tv_ui_motion_cache_ms">60000</integer>
+
+    <!-- Aspect ratio 16:9 de tarjetas -->
+    <integer name="tv_ui_card_aspect_w">16</integer>
+    <integer name="tv_ui_card_aspect_h">9</integer>
+
+    <!-- Diagnóstico a 2 columnas -->
+    <integer name="tv_ui_panel_columns">2</integer>
+
+    <!-- ============================================================
+         HOME / MENÚ PRINCIPAL (P1)
+         ============================================================ -->
+    <integer name="tv_ui_home_tick_ms">1000</integer>
+    <integer name="tv_ui_home_rail_max">12</integer>
+    <integer name="tv_ui_home_rail_skeleton">5</integer>
+    <integer name="tv_ui_progress_max">1000</integer>
+
+</resources>

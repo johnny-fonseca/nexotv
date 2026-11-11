@@ -1,0 +1,75 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+    <!-- Relleno sutil de la página izquierda del libro para dar profundidad -->
+    <path
+        android:fillColor="@color/tv_turquoise"
+        android:fillAlpha="0.15"
+        android:pathData="M8,7h8v19H8a2,2 0,0 1,-2 -2V9a2,2 0,0 1,2 -2z" />
+
+    <!-- Relleno sutil de la página derecha del libro con menor opacidad -->
+    <path
+        android:fillColor="@color/tv_turquoise"
+        android:fillAlpha="0.12"
+        android:pathData="M16,7h8a2,2 0,0 1,2 2v15a2,2 0,0 1,-2 2h-8z" />
+
+    <!-- Contorno de la página izquierda con esquinas redondeadas -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_turquoise"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M16,7H8a2,2 0,0 0,-2 2v15a2,2 0,0 0,2 2h8" />
+
+    <!-- Contorno de la página derecha con esquinas redondeadas -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_turquoise"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M16,7h8a2,2 0,0 1,2 2v15a2,2 0,0 1,-2 2h-8" />
+
+    <!-- Lomo central que separa ambas páginas -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_turquoise"
+        android:strokeAlpha="0.6"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M16,7V26" />
+
+    <!-- Líneas de texto superiores de ambas páginas -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_turquoise"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M9.5,12h3M19.5,12h3" />
+
+    <!-- Líneas de texto intermedias con opacidad reducida -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_turquoise"
+        android:strokeAlpha="0.7"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M9.5,16h3M19.5,16h3" />
+
+    <!-- Líneas de texto inferiores con opacidad menor para jerarquía -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_turquoise"
+        android:strokeAlpha="0.45"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M9.5,21h3M19.5,21h3" />
+</vector>

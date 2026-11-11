@@ -1,0 +1,37 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+    <!-- Relleno sutil del cuerpo del reproductor para dar profundidad -->
+    <path
+        android:fillColor="@color/tv_turquoise"
+        android:fillAlpha="0.12"
+        android:pathData="M8,7h16a2,2 0,0 1,2 2v14a2,2 0,0 1,-2 2H8a2,2 0,0 1,-2 -2V9a2,2 0,0 1,2 -2z" />
+
+    <!-- Contorno del reproductor con esquinas redondeadas -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_turquoise"
+        android:strokeAlpha="0.6"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M8,7h16a2,2 0,0 1,2 2v14a2,2 0,0 1,-2 2H8a2,2 0,0 1,-2 -2V9a2,2 0,0 1,2 -2z" />
+
+    <!-- Relleno del triángulo de reproducción para dar énfasis -->
+    <path
+        android:fillColor="@color/tv_turquoise"
+        android:fillAlpha="0.3"
+        android:pathData="M13,11.6l7.2,3.8a0.7,0.7 0,0 1,0 1.2L13,20.4a0.7,0.7 0,0 1,-1 -0.6v-7.6a0.7,0.7 0,0 1,1 -0.6z" />
+
+    <!-- Contorno del triángulo de reproducción con vértices suavizados -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_turquoise"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M13,11.6l7.2,3.8a0.7,0.7 0,0 1,0 1.2L13,20.4a0.7,0.7 0,0 1,-1 -0.6v-7.6a0.7,0.7 0,0 1,1 -0.6z" />
+</vector>

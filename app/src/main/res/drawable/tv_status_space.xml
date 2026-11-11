@@ -1,0 +1,61 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Relleno sutil del cuerpo del documento para dar profundidad -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.15"
+        android:pathData="M5,4h14a2,2 0,0 1,2 2v12a2,2 0,0 1,-2 2H5a2,2 0,0 1,-2 -2V6a2,2 0,0 1,2 -2z" />
+
+    <!-- Contorno del documento con esquinas redondeadas -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M5,4h14a2,2 0,0 1,2 2v12a2,2 0,0 1,-2 2H5a2,2 0,0 1,-2 -2V6a2,2 0,0 1,2 -2z" />
+
+    <!-- Línea de título superior del contenido -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M7,9h8" />
+
+    <!-- Línea de texto secundaria con opacidad reducida para jerarquía -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeAlpha="0.6"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M7,13.5h4" />
+
+    <!-- Relleno sutil del sello circular inferior derecho -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M16,15m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0" />
+
+    <!-- Contorno del sello circular del documento -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M16,15m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0" />
+
+    <!-- Punto de brillo central del sello -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.8"
+        android:pathData="M16,15m-0.6,0a0.6,0.6 0,1 1,1.2 0a0.6,0.6 0,1 1,-1.2 0" />
+</vector>

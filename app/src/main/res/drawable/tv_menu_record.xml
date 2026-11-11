@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+    <!-- Halo exterior difuso que da sensación de emisión en vivo -->
+    <path
+        android:fillColor="@color/tv_live"
+        android:fillAlpha="0.12"
+        android:pathData="M16,16m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" />
+
+    <!-- Relleno sutil del disco intermedio para dar profundidad -->
+    <path
+        android:fillColor="@color/tv_live"
+        android:fillAlpha="0.3"
+        android:pathData="M16,16m-8.5,0a8.5,8.5 0,1 1,17 0a8.5,8.5 0,1 1,-17 0" />
+
+    <!-- Contorno exterior del indicador con opacidad reducida -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_live"
+        android:strokeAlpha="0.5"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M16,16m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+
+    <!-- Contorno del disco intermedio del indicador -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tv_live"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M16,16m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+
+    <!-- Núcleo sólido central del indicador en vivo -->
+    <path
+        android:fillColor="@color/tv_live"
+        android:pathData="M16,16m-3.5,0a3.5,3.5 0,1 1,7 0a3.5,3.5 0,1 1,-7 0" />
+
+    <!-- Punto de brillo en el núcleo para dar efecto de luz -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.6"
+        android:pathData="M14.9,14.9m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />
+</vector>

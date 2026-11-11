@@ -1,0 +1,58 @@
+# Gradle: estado local, cachés y resultados de compilación
+.gradle/
+.gradle-user-home/
+.kotlin/
+**/build/
+
+# Android Studio / IntelliJ: configuración específica de cada equipo
+.idea/
+*.iml
+*.ipr
+*.iws
+local.properties
+
+# Carpetas generadas por Android NDK/CMake (si se incorporan en el futuro)
+.cxx/
+.externalNativeBuild/
+
+# Archivos generados de Android, empaquetados y reportes locales
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+lint-results*.html
+lint-results*.xml
+lint-results*.txt
+
+# Directorio de trabajo auxiliar de Manus/proyecto
+.work/
+
+# Credenciales, variables locales y material de firma
+/cookie.txt
+.env
+.env.*
+!.env.example
+keystore.properties
+key.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+
+# Sistema operativo y diagnósticos locales
+.DS_Store
+Thumbs.db
+*.hprof
+
+# Archivos temporales, logs y volcados de error
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.stackdump
+hs_err_pid*
+replay_pid*

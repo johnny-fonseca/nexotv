@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Warning triangle for the delete-playlist confirm (ref settings-round1/08). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Relleno sutil del triángulo de advertencia para dar profundidad -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.2"
+        android:pathData="M10.3,4.2L2.6,17.5a1.9,1.9 0,0 0,1.7 2.9h15.4a1.9,1.9 0,0 0,1.7 -2.9L13.7,4.2a1.9,1.9 0,0 0,-3.4 0z" />
+
+    <!-- Contorno del triángulo con vértices suavizados -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M10.3,4.2L2.6,17.5a1.9,1.9 0,0 0,1.7 2.9h15.4a1.9,1.9 0,0 0,1.7 -2.9L13.7,4.2a1.9,1.9 0,0 0,-3.4 0z" />
+
+    <!-- Trazo de la exclamación con opacidad de jerarquía -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeAlpha="0.9"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12,9.5v4.5" />
+
+    <!-- Punto inferior de la exclamación -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,17.2m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />
+</vector>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Componentes que solo existen en el APK de depuración. El release no incluye este
+    manifiesto, así que el receptor del laboratorio no puede activarse en producción.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <receiver
+            android:name=".diagnostics.DebugFaultReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="Nexotv.iptv.player.DEBUG.FAULT" />
+                <action android:name="Nexotv.iptv.player.DEBUG.FLAG" />
+                <action android:name="Nexotv.iptv.player.DEBUG.RESET" />
+                <action android:name="Nexotv.iptv.player.DEBUG.HOME_V2" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

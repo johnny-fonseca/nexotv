@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="12dp"
+    android:height="12dp"
+    android:viewportWidth="8"
+    android:viewportHeight="8">
+    <path
+        android:fillColor="@color/tv_ui_on_live"
+        android:pathData="M4,0 C6.21,0 8,1.79 8,4 C8,6.21 6.21,8 4,8 C1.79,8 0,6.21 0,4 C0,1.79 1.79,0 4,0 Z" />
+</vector>

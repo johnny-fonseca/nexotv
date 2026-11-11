@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icono de altavoz silenciado (mute) en estilo outline moderno -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Relleno sutil del cuerpo del altavoz para dar profundidad -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.2"
+        android:pathData="M4,10.5v3a1,1 0,0 0,1 1h2.5l3.8,3.6a0.8,0.8 0,0 0,1.3 -0.6V6.5a0.8,0.8 0,0 0,-1.3 -0.6L7.5,9.5H5a1,1 0,0 0,-1 1z" />
+
+    <!-- Contorno del altavoz con esquinas y vértices redondeados -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M4,10.5v3a1,1 0,0 0,1 1h2.5l3.8,3.6a0.8,0.8 0,0 0,1.3 -0.6V6.5a0.8,0.8 0,0 0,-1.3 -0.6L7.5,9.5H5a1,1 0,0 0,-1 1z" />
+
+    <!-- Primera diagonal de la cruz de silencio -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M17,9.5l4,5" />
+
+    <!-- Segunda diagonal de la cruz de silencio -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M21,9.5l-4,5" />
+
+    <!-- Punto de brillo en el centro del cono del altavoz -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.8"
+        android:pathData="M8.5,12m-0.7,0a0.7,0.7 0,1 1,1.4 0a0.7,0.7 0,1 1,-1.4 0" />
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tv_turquoise">#F04455</color>
+    <color name="tv_menu_bg">#F2071230</color>
+    <color name="tv_menu_panel">#F20D2050</color>
+    <color name="tv_menu_panel_stroke">#FF244A86</color>
+    <color name="tv_menu_row_normal">#FF102858</color>
+    <color name="tv_menu_row_normal_stroke">#FF1D3E76</color>
+    <color name="tv_menu_row_focused">#FF193F7A</color>
+    <color name="tv_menu_row_focused_stroke">#FFF04455</color>
+    <color name="tv_menu_brand_badge">#FFF7F9FF</color>
+</resources>

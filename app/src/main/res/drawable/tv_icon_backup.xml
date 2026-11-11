@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Cuerpo del disquete con esquina superior derecha recortada -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M6,3h9.59c0.27,0 0.52,0.11 0.7,0.29l3.42,3.42c0.18,0.18 0.29,0.43 0.29,0.7V18c0,1.66 -1.34,3 -3,3H6c-1.66,0 -3,-1.34 -3,-3V6C3,4.34 4.34,3 6,3z" />
+
+    <!-- Etiqueta superior (obturador) -->
+    <path
+        android:fillColor="#FF000000"
+        android:fillAlpha="0.3"
+        android:pathData="M7.5,3.8h7c0.28,0 0.5,0.22 0.5,0.5V8c0,0.55 -0.45,1 -1,1H8c-0.55,0 -1,-0.45 -1,-1V4.3C7,4.02 7.22,3.8 7.5,3.8z" />
+
+    <!-- Ranura de la etiqueta inferior -->
+    <path
+        android:fillColor="#FF000000"
+        android:fillAlpha="0.3"
+        android:pathData="M8,13h8c0.55,0 1,0.45 1,1v6H7v-6C7,13.45 7.45,13 8,13z" />
+
+    <!-- Líneas de texto en la etiqueta -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M9.5,16h5M9.5,18.2h3" />
+</vector>

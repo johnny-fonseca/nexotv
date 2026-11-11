@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Relleno sutil del disco interior del indicador de carga para dar profundidad -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.12"
+        android:pathData="M12,12m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+
+    <!-- Anillo base del indicador con opacidad reducida (arco ya recorrido) -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeAlpha="0.35"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12,12m-8.5,0a8.5,8.5 0,1 1,17 0a8.5,8.5 0,1 1,-17 0" />
+
+    <!-- Arco principal de progreso con extremos redondeados -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12,3.5A8.5,8.5 0,1 0,20.5 12" />
+
+    <!-- Arco secundario del cuadrante superior derecho con opacidad media para jerarquía -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeAlpha="0.65"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12,3.5A8.5,8.5 0,0 1,20.5 12" />
+
+    <!-- Punto de brillo central del indicador -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.8"
+        android:pathData="M12,12m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0" />
+</vector>

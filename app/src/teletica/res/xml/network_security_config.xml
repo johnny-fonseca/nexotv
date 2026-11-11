@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <!-- Teletica; host 190.61.101.11; stream predeterminado HTTP; revisar si el proveedor habilita HTTPS. -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">190.61.101.11</domain>
+    </domain-config>
+</network-security-config>

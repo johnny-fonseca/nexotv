@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ===== Features (Android TV) ===== -->
+    <uses-feature android:name="android.software.leanback" android:required="true" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+
+    <!-- ===== Permisos ===== -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+        Solo lectura del estado del Wi-Fi para el HUD: banda, frecuencia, RSSI, velocidad de
+        enlace y estándar. Es un permiso normal (no se pide en runtime) y no da acceso a la red,
+        a la ubicación ni a SSID/BSSID; la app no consulta esos dos campos.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Desde Android 14 NO se concede por defecto: verificar canScheduleExactAlarms() -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA" />
+
+    <application
+        android:name=".tv.TvIptvApplication"
+        android:theme="@style/TvIptvTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:banner="@drawable/launcher_banner"
+        android:allowBackup="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="false"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:enableOnBackInvokedCallback="true"
+            android:icon="@mipmap/ic_launcher"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|keyboard|navigation|uiMode|density|layoutDirection|locale"
+            tools:targetApi="24">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${deepLinkScheme}" android:host="live" />
+                <data android:scheme="${deepLinkScheme}" android:host="recording" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Arranque + reprogramar alarmas tras actualizar la app (se pierden al actualizar) -->
+        <receiver
+            android:name=".tv.AutoStartReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".recordings.ProgramAlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".home.HomeProgramUpdateReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Lo dispara el launcher de TV: debe ser exported. Validar el action en onReceive() -->
+        <receiver
+            android:name=".home.HomeProgramHiddenReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.tv.action.PREVIEW_PROGRAM_BROWSABLE_DISABLED" />
+                <action android:name="android.media.tv.action.WATCH_NEXT_PROGRAM_BROWSABLE_DISABLED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".recordings.HlsRecordingService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+    </application>
+</manifest>

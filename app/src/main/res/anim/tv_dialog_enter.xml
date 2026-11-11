@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/anim/tv_dialog_enter.xml -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/decelerate_quint"
+    android:shareInterpolator="true">
+
+    <!-- Las duraciones escalonadas (280/300/320 ms) producen una entrada suave y desfasada -->
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="280" />
+
+    <scale
+        android:fromXScale="0.92"
+        android:toXScale="1.0"
+        android:fromYScale="0.92"
+        android:toYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="320" />
+
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="0%"
+        android:fromYDelta="2.5%"
+        android:toYDelta="0%"
+        android:duration="300" />
+</set>

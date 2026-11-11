@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================
+         MARCA (no traducible)
+         ============================================================ -->
+    <string name="app_name" translatable="false">NexoIPTV</string>
+    <string name="player_channel" translatable="false">NexoIPTV</string>
+    <string name="tv_channel_name" translatable="false">Televisión</string>
+
+    <!-- ============================================================
+         ACCIONES / ETIQUETAS COMUNES
+         ============================================================ -->
+    <string name="tv_common_record">Grabar</string>
+    <string name="tv_common_close">Cerrar</string>
+    <string name="tv_common_delete">Eliminar</string>
+    <string name="tv_common_live">En vivo</string>
+    <string name="tv_common_recording_time">Grabando · %1$s</string>
+    <string name="tv_common_state_reminder">RECORDATORIO</string>
+    <string name="tv_common_state_recording_scheduled">GRABACIÓN PROGRAMADA</string>
+
+    <!-- ============================================================
+         REPRODUCTOR: ESTADOS
+         ============================================================ -->
+     <string name="player_status_connecting">Conectando con la señal…</string>
+     <string name="player_status_reconnecting">Reintentando conexión con la señal…</string>
+     <string name="player_status_connecting_brand">Conectando con %1$s…</string>
+     <string name="player_status_reconnecting_brand">Reconectando con %1$s…</string>
+     <string name="player_status_connection_eyebrow">CANAL %1$s</string>
+     <string name="player_status_connecting_help">Preparando la señal en vivo</string>
+     <string name="player_status_reconnecting_help">Restableciendo la transmisión</string>
+     <string name="player_status_retrying_attempt">Reintentando conexión con la señal (%1$s)…</string>
+     <string name="player_status_offline_title">Android no confirma acceso a Internet</string>
+     <string name="player_status_offline_help">Reintentaremos la reproducción. También puedes abrir Ajustes.</string>
+     <string name="player_status_network_lost_title">Se perdió la conexión de red</string>
+     <string name="player_status_network_lost_help">Reintentaremos cuando el sistema detecte una conexión disponible.</string>
+     <string name="player_status_signal_title">No se pudo cargar o reproducir la señal</string>
+     <string name="player_status_signal_help">Reintento automático programado; la causa no está determinada.</string>
+     <string name="player_status_http_title">Error HTTP al cargar la señal</string>
+     <string name="player_status_http_help">Reintento automático programado; HTTP no revela la causa.</string>
+     <string name="player_status_cleartext_title">Android bloqueó la conexión HTTP</string>
+     <string name="player_status_interrupted_title">La reproducción se interrumpió</string>
+     <string name="player_status_interrupted_help">Se programó un reintento automático.</string>
+     <string name="player_status_stream_not_configured">No hay una dirección de señal configurada.</string>
+     <string name="player_status_start_failed">No se pudo iniciar la reproducción.</string>
+     <string name="player_status_network_restored">Conexión de red disponible. Reintentando con %1$s…</string>
+     <string name="player_status_rebuilding">%1$s. Reintentando conexión con la señal…</string>
+     <string name="cleartext_blocked">Esta dirección usa HTTP sin cifrar y Android no la permite. Usa una dirección HTTPS.</string>
+     <string name="cleartext_blocked_with_headers">Esta dirección usa HTTP sin cifrar y Android no la permite. Usa una dirección HTTPS. No se enviaron encabezados personalizados.</string>
+     <string name="source_http_headers_not_tested">No se probó la dirección ni se enviaron encabezados personalizados por HTTP sin cifrar. Usa una dirección HTTPS.</string>
+     <string name="stream_http_headers_help">Encabezados HTTP opcionales para URL personalizadas. La señal predeterminada de %1$s siempre usa su configuración estándar y descarta encabezados guardados. Por seguridad, los encabezados personalizados no se envían a direcciones HTTP sin cifrar; usa HTTPS.</string>
+     <string name="stream_http_headers_suppressed">No se guardaron encabezados personalizados para HTTP sin cifrar; usa HTTPS o quita los encabezados.</string>
+     <string name="guide_cleartext_refresh_failed">No se pudo actualizar la guía: %1$s</string>
+     <string name="player_status_tls_title">Error de certificado SSL / Fecha del equipo</string>
+     <string name="player_status_tls_help">Las conexiones HTTPS requieren que la fecha y hora de tu dispositivo estén actualizadas. Por favor revisa la fecha y hora del sistema.</string>
+     <string name="tls_cert_or_clock_error">Error de conexión SSL. Verifica que la fecha y hora de tu dispositivo estén actualizadas.</string>
+    <string name="player_status_space_title">Sin espacio</string>
+    <string name="player_status_space_help">No hay espacio suficiente. Libera espacio o conecta una memoria USB.</string>
+    <string name="player_status_recording">@string/tv_common_recording_time</string>
+    <string name="player_status_recording_accessibility">Grabando · %1$s</string>
+
+    <!-- Reproductor: acciones de estado -->
+    <string name="player_status_retry">Reintentar</string>
+    <string name="player_status_retry_action">Reintentar reproducción</string>
+     <string name="player_status_settings">Ajustes</string>
+    <string name="player_status_settings_action">Abrir ajustes de conexión</string>
+    <string name="player_status_recordings">Ver Clips</string>
+    <string name="player_status_open_recordings">Abrir Clips</string>
+
+    <!-- ============================================================
+         REPRODUCTOR: PANTALLA
+         ============================================================ -->
+    <string name="player_live">EN VIVO</string>
+    <string name="player_recording">GRABACIÓN</string>
+    <string name="player_paused">En pausa · Pulsa OK para continuar</string>
+     <string name="player_connecting">@string/player_status_connecting</string>
+    <string name="player_up_next">A continuación: %1$s</string>
+    <string name="player_schedule_time_range">%1$s – %2$s</string>
+
+    <!-- ============================================================
+         MENÚ
+         ============================================================ -->
+
+    <string name="tv_menu_live">@string/tv_common_live</string>
+    <string name="tv_menu_guide">Guía</string>
+    <string name="tv_menu_search">Buscar</string>
+    <string name="tv_menu_recordings">Clips</string>
+    <string name="tv_menu_more">Más</string>
+
+    <!-- Menú: grabación -->
+    <string name="tv_menu_record_now">Grabar ahora</string>
+    <string name="tv_menu_record_help">Comienza a guardar emisiones</string>
+    <string name="tv_menu_recording_time">@string/tv_common_recording_time</string>
+    <string name="tv_menu_stop_recording">Detener</string>
+    <string name="tv_menu_recording_elapsed" translatable="false">%1$02d:%2$02d:%3$02d</string>
+
+    <string name="tv_menu_action_actions">Acciones</string>
+    <string name="tv_menu_action_guide">Guía</string>
+    <string name="tv_menu_action_schedule">Agendar</string>
+    <string name="tv_menu_action_recordings">Clips</string>
+    <string name="tv_menu_action_remind">Avisar</string>
+    <string name="tv_menu_action_remove_reminder">Quitar</string>
+    <string name="tv_menu_action_refresh">Recargar</string>
+    <string name="tv_menu_action_record">REC</string>
+    <string name="tv_menu_action_stop_recording">Parar</string>
+    <string name="tv_menu_exact_alarm_granted">Permiso concedido. Pulsa «Avisar» de nuevo para guardar el recordatorio.</string>
+    <string name="tv_menu_exact_alarm_denied">No se concedió el permiso de alarmas. Pulsa «Avisar» si quieres volver a intentarlo.</string>
+    <string name="tv_menu_no_more_schedule">Sin más programación publicada</string>
+    <string name="tv_menu_library_unavailable">Biblioteca no disponible</string>
+    <string name="tv_menu_library_loading">Leyendo biblioteca…</string>
+    <string name="tv_menu_library_empty">Sin grabaciones guardadas</string>
+    <string name="tv_menu_schedule_unavailable">Agenda no disponible</string>
+    <string name="tv_menu_schedule_empty">Sin avisos ni grabaciones en agenda</string>
+    <string name="tv_menu_play_button_desc">Reproducir señal en vivo</string>
+    <string name="tv_menu_explore">EXPLORAR</string>
+    <string name="tv_menu_live_badge">● AL AIRE</string>
+    <string name="tv_menu_live_card_title">LOS 11 TITULARES</string>
+    <string name="tv_menu_live_card_subtitle">En vivo · Transmisión actual</string>
+    <string name="tv_menu_live_marker">●  EN VIVO</string>
+    <string name="tv_menu_brand_channel_line">%1$s · %2$s</string>
+    <string name="tv_menu_card_next_header">SIGUIENTE</string>
+    <string name="tv_menu_card_recording_header">GRABACIÓN</string>
+    <string name="tv_menu_open_failed">No se pudo abrir la opción</string>
+    <string name="tv_menu_reminder_failed">No se pudo programar el recordatorio</string>
+    <string name="tv_menu_reminder_enabled">Recordatorio activado</string>
+    <string name="tv_menu_reminder_removed">Recordatorio eliminado</string>
+    <string name="tv_menu_recording_change_failed">No se pudo cambiar el estado de la grabación</string>
+    <string name="tv_menu_close">Cerrar</string>
+    <string name="tv_menu_main_menu">Menú principal</string>
+    <string name="tv_menu_state_recording">Grabación</string>
+    <string name="tv_menu_state_reconnecting">Reconectando</string>
+    <string name="tv_menu_state_connecting">Conectando</string>
+    <string name="tv_menu_state_live">En vivo</string>
+    <string name="tv_menu_state_paused">En pausa</string>
+    <string name="tv_menu_state_ended">Señal finalizada</string>
+    <string name="tv_menu_state_waiting">Esperando señal</string>
+    <string name="tv_menu_badge_recording">● GRABACIÓN</string>
+    <string name="tv_menu_badge_reconnecting">● RECONECTANDO</string>
+    <string name="tv_menu_badge_connecting">● CONECTANDO</string>
+    <string name="tv_menu_badge_live_airing">● AL AIRE</string>
+    <string name="tv_menu_badge_live_idle">● EN VIVO</string>
+    <string name="tv_menu_badge_paused">● EN PAUSA</string>
+    <string name="tv_menu_badge_no_signal">● SIN SEÑAL</string>
+    <string name="tv_menu_storage_tv_free">TV · %1$s libres</string>
+    <string name="tv_menu_storage_usb_free">USB · %1$s libres</string>
+    <string name="tv_menu_connection_format">%1$s · %2$s</string>
+    <string name="tv_menu_internet_available">con internet</string>
+    <string name="tv_menu_internet_unavailable">sin internet</string>
+    <string name="tv_menu_program_time_range">%1$s–%2$s</string>
+    <string name="tv_menu_live_title">Televisión en vivo</string>
+    <string name="tv_menu_live_program_format">%1$s – %2$s · %3$s</string>
+    <string name="tv_menu_live_time_range">%1$s – %2$s</string>
+    <string name="tv_menu_channel_state_format">%1$s · %2$s</string>
+    <string name="tv_menu_recording_playback">Grabación en reproducción</string>
+    <string name="tv_menu_destination_program_format">%1$s %2$s · %3$s</string>
+    <string name="tv_menu_guide_loading_count">Cargando guía · %1$d emisiones</string>
+    <string name="tv_menu_guide_empty_error">Sin guía · error al actualizar</string>
+    <string name="tv_menu_guide_empty_offline">Sin guía · sin conexión</string>
+    <string name="tv_menu_guide_empty_hint">Sin guía · abre Guía para revisar</string>
+    <string name="tv_menu_guide_count_error">%1$d emisiones · error al actualizar</string>
+    <string name="tv_menu_guide_count_offline">%1$d emisiones · sin conexión</string>
+    <string name="tv_menu_guide_count">%1$d emisiones</string>
+    <string name="tv_menu_guide_next_named">Sigue: %1$s · %2$s</string>
+    <string name="tv_menu_guide_next_unnamed">Sigue: %1$s</string>
+    <string name="tv_menu_guide_no_next_updated">%1$d emisiones · sin próximas · %2$s</string>
+    <string name="tv_menu_guide_no_next">%1$d emisiones · sin próximas</string>
+    <string name="tv_menu_search_unavailable">Búsquedas no disponibles</string>
+    <string name="tv_menu_search_recent">Reciente: %1$s</string>
+    <string name="tv_menu_search_empty_count">Sin recientes · %1$d emisiones para buscar</string>
+    <string name="tv_menu_search_empty">Sin recientes · no hay programas</string>
+    <string name="tv_menu_stream_info">• %1$s</string>
+    <string name="tv_menu_subtitles_missing">Sin subtítulos</string>
+    <string name="tv_menu_subtitles_language">SUB · %1$s</string>
+    <string name="tv_menu_subtitles_unknown">SUB · idioma n/d</string>
+    <string name="tv_menu_status_offline">Sin conexión\u0020\u0020</string>
+    <string name="tv_menu_status_loading">Actualizando\u0020\u0020</string>
+    <string name="tv_menu_status_loading_icon">⟳</string>
+    <string name="tv_menu_status_update_failed">Falló actualización\u0020\u0020</string>
+    <string name="tv_menu_status_guide_error">Error de guía\u0020\u0020</string>
+    <string name="tv_menu_status_guide_updated">Guía · %1$s\u0020\u0020</string>
+    <string name="tv_menu_status_guide_available">Guía disponible\u0020\u0020</string>
+    <string name="tv_menu_status_no_programs">Sin programas\u0020\u0020</string>
+    <string name="tv_menu_status_guide_update_failed_count">Falló actualización\u0020\u0020</string>
+    <string name="tv_menu_hero_brand_live">%1$s · Señal en vivo</string>
+    <string name="tv_menu_hero_recording">Grabación de %1$s</string>
+    <string name="tv_menu_scheduled_recording">Grabación programada</string>
+    <string name="tv_menu_reminder_active">Recordatorio activado</string>
+    <string name="tv_menu_reminder_available">Recordatorio disponible</string>
+    <string name="tv_menu_next_offline_title">Sin internet</string>
+    <string name="tv_menu_next_offline_subtitle">No hay próximas emisiones</string>
+    <string name="tv_menu_next_loading_title">Cargando guía</string>
+    <string name="tv_menu_next_loading_subtitle">Buscando próxima emisión…</string>
+    <string name="tv_menu_next_error_title">Error de guía</string>
+    <string name="tv_menu_next_empty_guide_title">Sin guía</string>
+    <string name="tv_menu_next_empty_guide_subtitle">Actualiza para ver horarios</string>
+    <string name="tv_menu_next_empty_title">Sin próximas</string>
+    <string name="tv_menu_next_empty_subtitle">No hay más emisiones</string>
+    <string name="tv_menu_recording_library_unavailable">biblioteca no disponible</string>
+    <string name="tv_menu_recording_library_count">%1$d en biblioteca</string>
+    <string name="tv_menu_recording_library_no_saved">Aún no hay grabaciones guardadas</string>
+    <string name="tv_menu_recording_short_label">REC</string>
+    <string name="tv_menu_recording_loading_library">%1$s · %2$s</string>
+    <string name="tv_menu_recording_library_loading">leyendo biblioteca</string>
+    <string name="tv_menu_recording_no_library">%1$s · %2$s</string>
+    <string name="tv_menu_recording_status_empty">Sin grabaciones ni avisos programados</string>
+    <string name="tv_menu_recording_agenda_empty">Sin grabaciones ni avisos programados</string>
+    <string name="tv_menu_recording_summary_empty">%1$s grabaciones · %2$s avisos</string>
+    <string name="tv_menu_recording_summary_saved">%1$d guardadas · %2$s grabaciones · %3$s avisos</string>
+    <string name="tv_menu_library_count_bytes">%1$d grabaciones · %2$s</string>
+    <string name="tv_menu_schedule_recordings">Grabaciones: %1$d en horario · %2$d próximas%3$s</string>
+    <string name="tv_menu_schedule_reminders">Avisos: %1$d vigentes · %2$d próximos%3$s</string>
+    <string name="tv_menu_schedule_time_suffix"> · %1$s</string>
+    <string name="tv_menu_program_duration">%1$s · %2$d min</string>
+    <string name="tv_menu_status_live">En vivo</string>
+    <string name="tv_menu_next_program_format">Siguiente: %1$s a las %2$s</string>
+
+    <!-- Menú: acciones y accesibilidad -->
+
+    <!-- ============================================================
+         GUÍA
+         ============================================================ -->
+
+    <!-- Guía: estados vacíos -->
+
+    <!-- Guía: etiquetas de estado -->
+    <string name="tv_guide_recent_searches">Búsquedas recientes</string>
+    <string name="tv_guide_live">AL AIRE</string>
+    <string name="tv_guide_next">SIGUIENTE</string>
+    <string name="tv_guide_later">MÁS TARDE</string>
+    <string name="tv_guide_saved">GUARDADO</string>
+    <string name="tv_guide_reminder">@string/tv_common_state_reminder</string>
+    <string name="tv_guide_recording_scheduled">@string/tv_common_state_recording_scheduled</string>
+
+    <!-- Guía: iconos (no traducibles) -->
+    <string name="tv_guide_icon_live" translatable="false">●</string>
+    <string name="tv_guide_icon_next" translatable="false">▶</string>
+    <string name="tv_guide_icon_later" translatable="false">◷</string>
+    <string name="tv_guide_icon_saved" translatable="false">◆</string>
+    <string name="tv_guide_icon_reminder" translatable="false">◉</string>
+    <string name="tv_guide_icon_recording" translatable="false">●</string>
+
+    <!-- Guía: estados vacíos -->
+     <string name="tv_guide_search_no_matches">No hay coincidencias. Prueba otro término.</string>
+     <string name="tv_guide_search_no_guide">No hay guía descargada.</string>
+     <string name="tv_guide_search_no_guide_error">No hay guía descargada y no se pudo actualizar.</string>
+     <string name="tv_guide_search_stale_or_failed">La guía puede estar desactualizada o no se pudo actualizar.</string>
+    <string name="tv_guide_search_retry_btn">Buscar otra vez</string>
+    <string name="tv_guide_search_refresh_btn">Actualizar guía</string>
+     <string name="tv_guide_missing_description">La fuente no proporciona descripción</string>
+     <string name="tv_guide_status_no_guide">Sin datos de guía</string>
+     <string name="tv_guide_status_no_guide_error">Sin guía; no se pudo actualizar</string>
+     <string name="tv_guide_status_pending_refresh">Guía pendiente de actualización</string>
+     <string name="tv_guide_status_cached_error">Datos guardados; no se pudo actualizar</string>
+     <string name="tv_guide_status_updated_today">Guía actualizada hoy, %1$s</string>
+     <string name="tv_guide_status_updated_date">Guía actualizada el %1$s, %2$s</string>
+    <string name="tv_guide_empty_title">Sin emisión seleccionada</string>
+    <string name="tv_guide_empty_meta">Guía de programación</string>
+    <string name="tv_guide_empty_description">No hay programas disponibles en este instante.</string>
+
+    <!-- Guía: acciones -->
+    <string name="tv_guide_tooltip_format" translatable="false">ⓘ Rojo graba al instante · Guía XMLTV actualizada %1$s</string>
+    <string name="tv_guide_remind_action">Recordarme</string>
+    <string name="tv_guide_record_action">@string/tv_common_record</string>
+    <string name="tv_guide_save_action">Guardar en Mis programas</string>
+    <string name="tv_guide_remove_reminder">Quitar recordatorio</string>
+    <string name="tv_guide_remove_recording">Cancelar grabación</string>
+    <string name="tv_guide_remove_saved">Quitar de Mis programas</string>
+
+    <!-- Guía: mensajes de confirmación -->
+    <string name="tv_guide_reminder_removed">Recordatorio eliminado</string>
+    <string name="tv_guide_recording_removed">Grabación programada cancelada</string>
+    <string name="tv_guide_program_saved">Programa guardado en Mis programas</string>
+    <string name="tv_guide_program_unsaved">Programa quitado de Mis programas</string>
+    <string name="tv_guide_recording_conflict">No se puede grabar: ya hay otra grabación en ese horario</string>
+
+    <!-- ============================================================
+         GRABACIONES
+         ============================================================ -->
+
+    <!-- Grabaciones: almacenamiento -->
+
+    <!-- Grabaciones: estados vacíos -->
+
+    <!-- Grabaciones: acciones -->
+
+    <!-- Grabaciones: estados -->
+
+    <!-- ============================================================
+         UI NUEVA (P0): accesibilidad del foco
+         ============================================================ -->
+    <string name="tv_ui_state_selected">Seleccionado</string>
+
+    <!-- ============================================================
+         HOME / MENÚ PRINCIPAL (P1)
+         ============================================================ -->
+    <string name="tv_home_nav_live">En vivo</string>
+    <string name="tv_home_nav_guide">Guía</string>
+    <string name="tv_home_nav_search">Buscar</string>
+    <string name="tv_home_nav_clips">Clips</string>
+    <string name="tv_home_nav_more">Más</string>
+
+    <string name="tv_home_nav_live_desc">En vivo. Volver a la señal en directo.</string>
+    <string name="tv_home_nav_guide_desc">Guía. Ver la programación.</string>
+    <string name="tv_home_nav_search_desc">Buscar. Buscar programas por título.</string>
+    <string name="tv_home_nav_clips_desc">Clips. Ver grabaciones y programaciones.</string>
+    <string name="tv_home_nav_more_desc">Más. Ajustes, imagen, sonido y diagnóstico.</string>
+    <string name="tv_home_clips_library_summary">%1$d grabaciones · %2$s</string>
+    <string name="tv_home_clips_empty_library">Sin grabaciones guardadas</string>
+    <string name="tv_home_clips_scheduled_recordings">Grabaciones: %1$d en horario · %2$d próximas%3$s</string>
+    <string name="tv_home_clips_scheduled_reminders">Avisos: %1$d vigentes · %2$d próximos%3$s</string>
+    <string name="tv_home_clips_schedule_unavailable">Agenda no disponible</string>
+    <string name="tv_home_clips_schedule_empty">Sin avisos ni grabaciones en agenda</string>
+    <string name="tv_home_clips_next_recording_time">Grabación %1$s</string>
+    <string name="tv_home_clips_next_reminder_time">Aviso %1$s</string>
+
+    <string name="tv_home_brand_fallback">Señal en vivo</string>
+    <string name="tv_home_brand_mark_fallback" translatable="false">•</string>
+    <string name="tv_home_channel_line">%1$s · %2$s</string>
+    <string name="tv_home_channel_desc">Canal: %1$s</string>
+
+    <string name="tv_home_watch_now">Ver ahora</string>
+    <string name="tv_home_watch_now_desc">Ver ahora. Volver a la señal en directo.</string>
+    <string name="tv_home_record">Grabar</string>
+    <string name="tv_home_record_desc">Grabar la señal actual.</string>
+    <string name="tv_home_stop_record">Detener</string>
+    <string name="tv_home_stop_record_desc">Detener la grabación en curso.</string>
+
+    <string name="tv_home_live_badge">EN VIVO</string>
+    <string name="tv_home_recording_badge">GRABACIÓN</string>
+    <string name="tv_home_connecting_badge">CONECTANDO</string>
+    <string name="tv_home_reconnecting_badge">RECONECTANDO</string>
+    <string name="tv_home_offline_badge">SIN CONEXIÓN</string>
+    <string name="tv_home_error_badge">SEÑAL CON PROBLEMAS</string>
+    <string name="tv_home_playback_status_desc">Estado: %1$s</string>
+
+    <string name="tv_home_status_live">En vivo</string>
+    <string name="tv_home_status_connecting">Conectando…</string>
+    <string name="tv_home_status_reconnecting">Reconectando…</string>
+    <string name="tv_home_status_offline">Sin conexión</string>
+    <string name="tv_home_status_error">Señal con problemas</string>
+
+    <string name="tv_home_up_next_eyebrow">A CONTINUACIÓN</string>
+    <string name="tv_home_up_next_empty">No hay un próximo programa en la guía.</string>
+    <string name="tv_home_up_next_action">Programar</string>
+    <string name="tv_home_up_next_action_desc">Abrir acciones para %1$s.</string>
+    <string name="tv_home_open_guide">Abrir guía</string>
+    <string name="tv_home_open_guide_desc">Abrir la guía de programación.</string>
+    <string name="tv_home_guide_error">No se pudo cargar la guía.</string>
+    <string name="tv_home_retry">Reintentar</string>
+    <string name="tv_home_retry_desc">Reintentar la actualización de la guía.</string>
+
+    <string name="tv_home_more_to_watch">Más para ver</string>
+    <string name="tv_home_rail_empty">No hay programas próximos en la guía.</string>
+    <string name="tv_home_rail_error">No se pudo cargar Más para ver.</string>
+    <string name="tv_home_rail_card_desc">%1$s. %2$s. Abrir acciones del programa.</string>
+    <string name="tv_home_skeleton_desc">Cargando programación.</string>
+
+    <string name="tv_home_program_no_title">Programa sin título</string>
+    <string name="tv_home_progress_desc">%1$d por ciento del programa.</string>
+    <string name="tv_home_program_unavailable">No se pudo abrir ese programa.</string>
+    <string name="tv_home_destination_failed">No se pudo abrir esa opción.</string>
+
+    <string name="tv_home_exit_hint">Pulsa Atrás otra vez para salir</string>
+    <string name="tv_home_exit_hint_desc">Aviso. Pulsa Atrás otra vez para salir.</string>
+    <string name="tv_home_clock_desc">Hora actual: %1$s</string>
+
+</resources>

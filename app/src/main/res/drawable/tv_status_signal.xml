@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Relleno sutil del ojo tachado para dar profundidad -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.15"
+        android:pathData="M12,6C7.5,6 3.8,8.7 2,12c1.8,3.3 5.5,6 10,6s8.2,-2.7 10,-6c-1.8,-3.3 -5.5,-6 -10,-6z" />
+
+    <!-- Contorno del ojo con párpados suavizados y opacidad reducida -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeAlpha="0.6"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12,6C7.5,6 3.8,8.7 2,12c1.8,3.3 5.5,6 10,6s8.2,-2.7 10,-6c-1.8,-3.3 -5.5,-6 -10,-6z" />
+
+    <!-- Iris del ojo con opacidad media para jerarquía -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeAlpha="0.8"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12,12m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+
+    <!-- Punto de brillo en la pupila -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillAlpha="0.8"
+        android:pathData="M12,12m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />
+
+    <!-- Línea diagonal de tachado que indica ocultar o desactivar -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M3.5,3.5L20.5,20.5" />
+</vector>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tv_menu_panel" />
+    <item type="id" name="tv_focus_shine" />
+    <!-- UI nueva (P0): clave estable de foco y raíz de la capa de UI. -->
+    <item type="id" name="tv_ui_focus_key" />
+    <item type="id" name="tv_ui_root" />
+    <!-- Home (P1): ids estables para el mapa de foco y las pruebas. -->
+    <item type="id" name="tv_ui_home_root" />
+    <item type="id" name="tv_ui_home_nav" />
+    <item type="id" name="tv_ui_home_content" />
+    <item type="id" name="tv_ui_nav_live" />
+    <item type="id" name="tv_ui_nav_guide" />
+    <item type="id" name="tv_ui_nav_search" />
+    <item type="id" name="tv_ui_nav_clips" />
+    <item type="id" name="tv_ui_nav_more" />
+    <item type="id" name="tv_ui_hero_play" />
+    <item type="id" name="tv_ui_hero_record" />
+    <item type="id" name="tv_ui_next_action" />
+    <item type="id" name="tv_ui_rail" />
+    <item type="id" name="tv_ui_rail_state_action" />
+    <item type="id" name="tv_ui_exit_hint" />
+</resources>
