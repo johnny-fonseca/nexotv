@@ -42,6 +42,14 @@ jobs:
       - name: Run unit tests and build APKs
         run: ./gradlew --no-daemon testTeleticaDebugUnitTest testFutvDebugUnitTest testOpaDebugUnitTest assembleTeleticaDebug assembleFutvDebug assembleOpaDebug assembleTeleticaDebugAndroidTest assembleFutvDebugAndroidTest assembleOpaDebugAndroidTest
 
+      - name: Upload debug APKs
+        uses: actions/upload-artifact@v4
+        with:
+          name: nexotv-debug-apks
+          path: app/build/outputs/apk/*/debug/*.apk
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Enable KVM
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
