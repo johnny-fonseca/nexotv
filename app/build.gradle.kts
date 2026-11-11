@@ -17,7 +17,11 @@ if (releaseSigningValues.any { !it.isNullOrBlank() } && !hasReleaseSigning) {
 
 android {
     namespace = "Nexotv.iptv.player"
-    compileSdk = 37
+    compileSdk {
+        version = release(37) {
+            minorApiLevel = 0
+        }
+    }
     buildFeatures { buildConfig = true }
 
     flavorDimensions += "marca"

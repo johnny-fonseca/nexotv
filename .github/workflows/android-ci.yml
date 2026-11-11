@@ -34,11 +34,11 @@ jobs:
         uses: android-actions/setup-android@v4
 
       - name: Install compile SDK
-        run: sdkmanager "platforms;android-37" "build-tools;36.0.0"
+        run: sdkmanager "platforms;android-37.0" "build-tools;37.0.0"
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v6
-
+      
       - name: Run unit tests and build APKs
         run: ./gradlew --no-daemon testTeleticaDebugUnitTest testFutvDebugUnitTest testOpaDebugUnitTest assembleTeleticaDebug assembleFutvDebug assembleOpaDebug assembleTeleticaDebugAndroidTest assembleFutvDebugAndroidTest assembleOpaDebugAndroidTest
 
