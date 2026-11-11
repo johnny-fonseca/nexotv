@@ -4,6 +4,11 @@ plugins {
     id("com.android.application")
 }
 
+val releaseVersionCode =
+    providers.gradleProperty("releaseVersionCode").orElse("8").get().toInt()
+val releaseVersionName =
+    providers.gradleProperty("releaseVersionName").orElse("1.0.7").get()
+
 val releaseSigningValues = listOf(
     providers.environmentVariable("TVIPTV_RELEASE_STORE_FILE").orNull,
     providers.environmentVariable("TVIPTV_RELEASE_STORE_PASSWORD").orNull,
@@ -91,8 +96,8 @@ android {
         applicationId = "Nexotv.iptv.player"
         minSdk = 23
         targetSdk = 37
-        versionCode = 8
-        versionName = "1.0.7"
+        versionCode = releaseVersionCode
+        versionName = releaseVersionName
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
