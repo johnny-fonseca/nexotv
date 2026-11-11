@@ -194,7 +194,7 @@ internal class TvExitGuard(
     /** Returns true when the caller must finish; false after showing the hint. */
     fun requestExit(): Boolean {
         val now = clock()
-        if (now <= armedUntilMs) {
+        if (armedUntilMs > 0L && now <= armedUntilMs) {
             armedUntilMs = 0L
             return true
         }
